@@ -1,0 +1,41 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" charset="width=device-width,
+    initial-scale">
+    <style>
+/* 태두리까지가 진짜 크기라고 생각하기 쉬운데 css 초창기에는
+padding과 border가 빠져있고  그 남은 부분인 content가 
+진짜 크기로 보았다 (지금도 마찬가지)*/
+/* border가 들어오고 나서 문제가 발생했다.
+이를 해결하기 위해 box-sizing 속성이 생겼다 */
+
+/* *은 여기서 나오는 모든 tag를 지정한다고 보면 된다.
+python에 import *하고 비슷한 개념으로 보면 될거 같다. */
+        *{
+            box-sizing:border-box;
+        }
+
+        div{
+            margin: 10px;
+            width: 150px;
+/* box-sizing의 기본값은 content-box이다 */
+/* box-sizing 값을 border-box로 바꾸면 border의 크기사이즈가
+같아진다. 어떻게 보면 더 예측하기 쉬워진다 */
+            /* box-sizing: border-box; */
+        }
+        #small{
+            border: 10px solid blue;
+        }
+        #large{
+            border: 30px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="small">SaRangHae</div>
+    <div id="large">SaRangHae</div>
+</body>
+</html>

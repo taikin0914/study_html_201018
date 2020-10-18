@@ -1,0 +1,49 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="name">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+<!-- frontend에서는 box가 굉장히 중요하다 -->
+<!-- box모델은 부피 여백 크기를 지정한다 -->
+    <style>
+        p, a{
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: blue; = */
+            border: 10px solid blue;
+            /* border이 box model의 기준점을 제시해주기
+            때문에 중요하다 */
+
+/* padding은 글자와 border사이 간격을 조정하는 역활을 한다 */
+            padding: 50px;
+
+/* 두 단락을 거리를 조정하고 싶으면 margin 속성을 쓰면 된다 */
+/* element와 element의 간격을 margin이라고 한다 */
+            margin: 60px;
+
+/* 너비와 높이를 조정하고 싶으면 width와 height 속성을 쓰면 된다*/
+/* p tag에 height를 지정을 잘 안 한다. 왜냐하면 글자가 삐져
+나올 수 있기 때문이다. */
+            width: 150px;
+
+/* a tag는 inline이다
+margin, padding 그리고 border은 적용된 것을 알 수 있는데
+width와 height는 아무리 바꾸어 봐도 적용이 안된다.
+이유는 a tag과 inline이기 때문이다 */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Molestiae voluptatem magnam eligendi perferendis.
+    </p>
+    <p>
+        cum nam asperiores explicabo sunt temporibus 
+        neque non maiores dolorum quidem nihil ea et id? Vero, veritatis!
+    </p>
+    이 링크는 <a href="https://www.naver.com">네이버</a>하고 연결되어 있습니다
+</body>
+</html>
